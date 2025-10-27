@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --rosinha-morango: #B23A48;  /* 💖 cor principal */
+    --rosa-medio: #C75B68;
+    --marrom-suave: #6B3E38;
+    --cinza-escuro: #1E1E1E;
+    --bege-claro: #F8E9E1;
+    --branco: #FFFFFF;
+}
+
+body {
+    background-color: var(--cinza-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--rosinha-morango);
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+
+    & header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+
+        & img {
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+            object-fit: cover;
+            border: solid 3px var(--bege-claro);
+        }
+
+        & .container {
+            & h1 {
+                color: var(--branco);
+                font-size: 29px;
+                margin-bottom: 5px;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            & p {
+                color: var(--bege-claro);
+                font-size: 15px;
+                text-align: center;
+                opacity: 0.9;
+            }
+        }
+    }
+
+    & section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & a {
+            background-color: var(--rosa-medio);
+            color: var(--branco);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s linear;
+            font-weight: 500;
+        }
+
+        & a:hover {
+            background-color: var(--marrom-suave);
+            transform: scale(1.03);
+        }
+    }
+
+    footer {
+        color: var(--bege-claro);
+        text-align: center;
+        font-size: 13px;
+        opacity: 0.85;
+    }
+}
